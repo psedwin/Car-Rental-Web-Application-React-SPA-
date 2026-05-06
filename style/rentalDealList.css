@@ -1,0 +1,46 @@
+.rentalDealList {
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.rentalDealList h2 {
+    margin-top: 0;
+    color: #0b1f3a;
+}
+
+.rentalDealList .listNote {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.rentalDealList .sortRow {
+    margin-bottom: 18px;
+}
+
+.rentalDealList .sortRow button {
+    margin-right: 10px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0b1f3a;
+    color: white;
+    cursor: pointer;
+}
+
+.rentalDealList .sortRow button:hover {
+    opacity: 0.9;
+}
+
+.rentalDealList .dealListItems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.rentalDealList .rentalDeal {
+    flex: 1 1 280px;
+    max-width: 320px;
+}

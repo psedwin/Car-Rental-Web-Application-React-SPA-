@@ -1,0 +1,87 @@
+/* style/main.css */
+
+/* Basic reset */
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5eee2; /* close to your HW01 warm background */
+}
+
+/* TITLE + NAV wrapper */
+#titleNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    background-color: #0b1f3a;
+    color: white;
+
+    padding: 0.75rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Website title text */
+#title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Nav container (don’t style inner content area stuff here) */
+#nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+/* This helps avoid nav wrapping weirdly */
+#nav a {
+    white-space: nowrap;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* CONTENT area: only spacing constraints */
+#content {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    padding: 1rem;
+    padding-top: 7.5rem;   /* enough space under fixed TitleNav */
+    padding-bottom: 4rem;  /* enough space above fixed footer */
+}
+
+/* FOOTER */
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: #111;
+    color: white;
+    text-align: center;
+
+    padding: 0.75rem 1rem;
+}
+
+/* Responsive: when the title/nav becomes horizontal, reduce top padding */
+@media (min-width: 800px) {
+    #titleNav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    #content {
+        padding-top: 5rem;
+    }
+}

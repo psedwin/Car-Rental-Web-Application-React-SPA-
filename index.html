@@ -1,0 +1,138 @@
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Car Rental SPA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="icons/smiley.png" />
+
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <link href="style/dropDown.css" rel="stylesheet" type="text/css" />
+    <link href="style/myDropDown.css" rel="stylesheet" type="text/css" />
+    <link href="style/usersComingSoon.css" rel="stylesheet" type="text/css" />
+    <link href="style/home.css" rel="stylesheet" type="text/css" />
+    <link href="style/blog.css" rel="stylesheet" type="text/css" />
+    <link href="style/rentalDeal.css" rel="stylesheet" type="text/css" />
+    <link href="style/slideShow.css" rel="stylesheet" type="text/css" />
+    <link href="style/rentalDealList.css" rel="stylesheet" type="text/css" />
+    <link href="style/editArea.css" rel="stylesheet" type="text/css" />
+    <link href="style/validate.css" rel="stylesheet" type="text/css" />
+    <link href="style/rentalDealListR.css" rel="stylesheet" type="text/css" />
+
+    <script src='https://unpkg.com/react@18/umd/react.production.min.js'></script>
+    <script src='https://unpkg.com/react-dom@18/umd/react-dom.production.min.js'></script>
+    <script src='https://unpkg.com/babel-standalone@6.26.0/babel.js'></script>
+    <script src='https://unpkg.com/react-router-dom@5.0.0/umd/react-router-dom.min.js'></script>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <!-- JS reusable -->
+    <script src="_JS_reusable/dropDownFW.js"></script>
+    <script src="_JS_reusable/persist.js"></script>
+    <script src="_JS_reusable/ajax.js"></script>
+    <script src="_JS_reusable/MakeRentalDeal.js"></script>
+    <script src="_JS_reusable/MakeSlideShow.js"></script>
+    <script src="_JS_reusable/MakeRentalDealList.js"></script>
+    <script src="_JS_reusable/MakeTag.js"></script>
+    <script src="_JS_reusable/Validate.js"></script>
+    <script src="_JS_reusable/MakeEditArea.js"></script>
+
+    <!-- JS CGF -->
+    <script src="_JS_CGF/MakeRentalDeal_CGF.js"></script>
+    <script src="_JS_CGF/SlideShow_CGF.js"></script>
+    <script src="_JS_CGF/MakeRentalDealList_CGF.js"></script>
+    <script src="_JS_CGF/MakeEditArea_CGF.js"></script>
+
+    <!-- React reusable -->
+    <script type="text/babel" src="_React_reusable/ConvertEle.js"></script>
+    <script type="text/babel" src="_React_reusable/MakeRentalDealListR.js"></script>
+
+    <!-- React CGF -->
+    <script type="text/babel" src="_React_CGF/BlogR.js"></script>
+    <script type="text/babel" src="_React_CGF/HomeR.js"></script>
+    <script type="text/babel" src="_React_CGF/MakeRentalDealListR_CGF.js"></script>
+
+    <script type="text/babel">
+        "use strict";
+
+        dropDownFW({
+            dropHeaderStyle: "dropHeader",
+            dropContentStyle: "dropContent",
+            showStyle: "show",
+            hideStyle: "hide"
+        });
+
+        const Link = ReactRouterDOM.Link;
+        const Route = ReactRouterDOM.Route;
+
+        const App = () => (
+            <ReactRouterDOM.HashRouter>
+
+                <div id="titleNav">
+                    <div id="title">
+                        Car Rental
+                    </div>
+
+                    <div id="nav">
+
+                        <div className="dropDown">
+                            <Link to="/home">Home</Link>
+                        </div>
+
+                        <div className="dropDown">
+                            <div className="dropHeader">Search JS</div>
+                            <div className="dropContent">
+                                <Link to="/rentalDeals">JS Obj Comp (HW3)</Link> <br />
+                                <Link to="/slideShows">Slide Show (HW4)</Link> <br />
+                                <Link to="/rentalDealList">JS Obj List Comp (HW5)</Link> <br />
+                                <Link to="/editArea">Input Comp (HW6)</Link> <br />
+                            </div>
+                        </div>
+
+                        <div className="dropDown">
+                            <div className="dropHeader">Search React</div>
+                            <div className="dropContent">
+                                <Link to="/reactRentalDealList">React Obj List Comp (HW8)</Link> <br />
+                            </div>
+                        </div>
+
+                        <div className="dropDown">
+                            <Link to="/blog">Blog</Link>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="content">
+                    <Route path="/" exact component={HomeR} />
+                    <Route path="/home" component={HomeR} />
+
+                    <Route path="/rentalDeals" component={() => <ConvertEle ele={MakeRentalDeal_CGF()} />} />
+                    <Route path="/slideShows" component={() => <ConvertEle ele={SlideShow_CGF()} />} />
+                    <Route path="/rentalDealList" component={() => <ConvertEle ele={MakeRentalDealList_CGF()} />} />
+                    <Route path="/editArea" component={() => <ConvertEle ele={MakeEditArea_CGF()} />} />
+
+                    <Route path="/reactRentalDealList" component={MakeRentalDealListR_CGF} />
+
+                    <Route path="/blog" component={BlogR} />
+                </div>
+
+                <div id="footer">
+                    Edwin Owusu Siaw
+                </div>
+
+            </ReactRouterDOM.HashRouter>
+        );
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+
+</body>
+
+</html>
+```

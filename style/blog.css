@@ -1,0 +1,48 @@
+/* style/blog.css */
+/* Styles ONLY the Blog component */
+
+.blog {
+    background-color: #f2f2f2;
+    padding: 1.25rem;
+    border-radius: 10px;
+}
+
+/* Main heading */
+.blog h2 {
+    color: #0b1f3a;
+    margin-bottom: 0.5rem;
+}
+
+/* Intro paragraph */
+.blog .blogIntro {
+    margin-bottom: 0.75rem;
+}
+
+/* Section wrapper (replaces inline sectionStyle) */
+.blog .blogSection {
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 2px solid rgba(0,0,0,0.15);
+}
+
+/* Section headings */
+.blog h3 {
+    color: #1f4fa3;
+    margin-bottom: 0.4rem;
+}
+
+/* Paragraphs */
+.blog p {
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+}
+
+/* Links */
+.blog a {
+    font-weight: bold;
+    color: #1f4fa3;
+}
+
+.blog a:hover {
+    text-decoration: underline;
+}

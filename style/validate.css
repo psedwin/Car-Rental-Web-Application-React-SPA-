@@ -1,0 +1,53 @@
+.validatePage .validateIntro {
+    background: #eef3fa;
+    border-radius: 14px;
+    padding: 1rem 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.validatePage .validateIntro h1 {
+    margin-top: 0;
+    color: #0b1f3a;
+}
+
+.validatePage .validateGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.validatePage .validateColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.validatePage .messageArea {
+    background: #fff;
+    border-left: 5px solid #0b1f3a;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.validatePage .messageArea h3 {
+    margin-top: 0;
+    color: #0b1f3a;
+}
+
+.validatePage .objectEcho {
+    display: grid;
+    gap: 0.45rem;
+    margin-top: 0.75rem;
+}
+
+.validatePage .echoKey {
+    font-weight: bold;
+    color: #21324d;
+}
+
+@media (min-width: 1000px) {
+    .validatePage .validateGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}

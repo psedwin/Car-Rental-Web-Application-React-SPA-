@@ -1,0 +1,20 @@
+[
+  {
+    "image": "pics/car 2.jpg",
+    "dealName": "City Saver Package",
+    "dailyRate": 120,
+    "days": 4
+  },
+  {
+    "image": "pics/Car 1.jpg",
+    "dealName": "Premium SUV Package",
+    "dailyRate": 350,
+    "days": 2
+  },
+  {
+    "image": "pics/car 3.jpg",
+    "dealName": "VIP Event Package",
+    "dailyRate": 900,
+    "days": 1
+  }
+]

@@ -1,0 +1,102 @@
+.slideShow {
+    margin-bottom: 1.5rem;
+}
+
+.slideShow .ssCard {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.slideShow h2 {
+    margin-top: 0;
+    color: #0b1f3a;
+}
+
+.slideShow .ssImgWrap {
+    margin: 0.75rem 0;
+}
+
+.slideShow img {
+    width: 100%;
+    max-width: 320px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.slideShow .ssCaption {
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: #222;
+}
+
+.slideShow .ssButtonRow,
+.slideShow .ssInfoBtnRow {
+    margin-bottom: 0.75rem;
+}
+
+.slideShow button {
+    margin: 0.25rem;
+    padding: 0.45rem 0.85rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #0b1f3a;
+    color: white;
+    font-weight: bold;
+}
+
+.slideShow button:hover {
+    background-color: #15345e;
+}
+
+.slideShow .ssInfo {
+    background-color: #f5eee2;
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    text-align: left;
+}
+
+.slideShow .ssInfo p {
+    margin: 0.4rem 0;
+}
+
+.slideShow .ssCounter {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0;
+}
+
+.slideShow .hide {
+    display: none;
+}
+
+.slideShow .show {
+    display: inline-block;
+}
+
+.slideShow .hideBlock {
+    display: none;
+}
+
+.slideShow .showBlock {
+    display: block;
+}
+
+.slideShowFlex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.slideShowFlex .firstSlideShow,
+.slideShowFlex .secondSlideShow,
+.slideShowFlex .thirdSlideShow {
+    flex: 1 1 300px;
+}

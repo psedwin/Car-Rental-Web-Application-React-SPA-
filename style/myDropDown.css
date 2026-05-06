@@ -1,0 +1,52 @@
+/* style/myDropDown.css */
+
+/* The dropdown container should visually blend into your dark TitleNav */
+.dropDown {
+    /* do not change position settings in dropDown.css */
+    margin-right: 0.25rem;
+}
+
+/* Top-level clickable header / link area */
+.dropDown .dropHeader,
+.dropDown a {
+    color: white;
+    font-weight: bold;
+}
+
+/* Make the dropHeader look like a nav item */
+.dropDown .dropHeader {
+    padding: 0.3rem 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Hover styles (feel free to tweak) */
+.dropDown .dropHeader:hover,
+.dropDown a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+}
+
+/* The dropdown menu panel */
+.dropDown .dropContent {
+    /* do not change position/absolute/right settings in dropDown.css */
+    background-color: #0b1f3a;   /* match header */
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 10px;
+    padding: 0.5rem 0.75rem;
+    min-width: 180px;
+}
+
+/* Links inside the dropdown */
+.dropDown .dropContent a {
+    display: inline-block;
+    padding: 0.25rem 0;
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+/* Hover inside dropdown */
+.dropDown .dropContent a:hover {
+    text-decoration: underline;
+}

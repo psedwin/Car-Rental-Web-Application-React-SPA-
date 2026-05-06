@@ -1,0 +1,53 @@
+[
+  {
+    "carId": 1,
+    "make": "Lamborghini",
+    "model": "Urus",
+    "year": 2023,
+    "dailyRate": 899.99,
+    "seats": 5,
+    "transmission": "Automatic",
+    "available": true,
+    "features": [
+      "All-Wheel Drive",
+      "Twin-Turbo V8",
+      "Luxury Interior",
+      "Apple CarPlay"
+    ],
+    "image": "pics/Car 1.jpg"
+  },
+  {
+    "carId": 2,
+    "make": "Dodge",
+    "model": "Charger Hellcat",
+    "year": 2022,
+    "dailyRate": "",
+    "seats": "",
+    "transmission": "Automatic",
+    "available": true,
+    "features": [
+      "Supercharged V8",
+      "Performance Brakes",
+      "Launch Control",
+      "Sport Mode"
+    ],
+    "image": "pics/car 2.jpg"
+  },
+  {
+    "carId": 3,
+    "make": "Rolls-Royce",
+    "model": "Phantom",
+    "year": 2022,
+    "dailyRate": 1299.99,
+    "seats": 5,
+    "transmission": "Automatic",
+    "available": false,
+    "features": [
+      "Handcrafted Interior",
+      "Rear Seat Comfort",
+      "Starlight Headliner",
+      "Ultra-Quiet Ride"
+    ],
+    "image": "pics/car 3.jpg"
+  }
+]

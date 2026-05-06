@@ -1,0 +1,50 @@
+/* style/home.css */
+/* Styles ONLY the Home component */
+
+.home {
+    background-color: white;
+    padding: 1.25rem;
+}
+
+/* Headline */
+.home h2 {
+    color: #0b1f3a;
+    margin-bottom: 0.5rem;
+}
+
+/* Paragraphs */
+.home p {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+/* Call-to-action button */
+.home .homeBtn {
+    display: inline-block;
+    margin-top: 0.75rem;
+    padding: 0.6rem 1rem;
+    background-color: #0b1f3a;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.home .homeBtn:hover {
+    background-color: #15345e;
+}
+
+/* Image wrapper */
+.home .homeHero {
+    margin-top: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* Image itself */
+.home img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "image": "pics/Car 1.jpg",
+    "dealName": "Luxury Weekend Package",
+    "dailyRate": 500,
+    "days": 2
+  },
+  {},
+  {
+    "image": "pics/car 3.jpg",
+    "dealName": "Executive Business Package",
+    "dailyRate": 700,
+    "days": 3
+  }
+]

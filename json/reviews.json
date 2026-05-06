@@ -1,0 +1,32 @@
+[
+  {
+    "reviewId": 1,
+    "reviewTitle": "Luxury Weekend Experience",
+    "customerName": "Maya Thompson",
+    "carBooked": "Lamborghini Urus",
+    "starRating": 5,
+    "tripType": "Weekend Getaway",
+    "comment": "The car was clean, fast, and perfect for a luxury trip.",
+    "reviewPic": "pics/Car 1.jpg"
+  },
+  {
+    "reviewId": 2,
+    "reviewTitle": "Birthday Performance Rental",
+    "customerName": "Jordan Ellis",
+    "carBooked": "Dodge Charger Hellcat",
+    "starRating": 4,
+    "tripType": "Birthday Rental",
+    "comment": "Amazing sound and performance. Booking process was smooth.",
+    "reviewPic": "pics/car 2.jpg"
+  },
+  {
+    "reviewId": 3,
+    "reviewTitle": "Executive Event Ride",
+    "customerName": "Edwin Siaw",
+    "carBooked": "Rolls-Royce Phantom",
+    "starRating": 5,
+    "tripType": "Business Event",
+    "comment": "Very comfortable and elegant. It made a great impression.",
+    "reviewPic": "pics/car 3.jpg"
+  }
+]

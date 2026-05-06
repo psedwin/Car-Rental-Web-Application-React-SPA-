@@ -1,0 +1,92 @@
+.editArea {
+    background: #ffffff;
+    border: 1px solid #d9dfeb;
+    border-radius: 14px;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(11, 31, 58, 0.08);
+}
+
+.editArea .editAreaTitle {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #0b1f3a;
+}
+
+.editArea .editAreaForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+}
+
+.editArea .editAreaField {
+    background: #f8fafc;
+    border-radius: 10px;
+    padding: 0.8rem;
+    border: 1px solid #e3e8f0;
+}
+
+.editArea .editAreaPrompt {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.45rem;
+    color: #21324d;
+}
+
+.editArea .editAreaInput {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #b8c4d6;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: white;
+}
+
+.editArea .editAreaChoiceWrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem 1rem;
+}
+
+.editArea .editAreaChoiceLabel {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.editArea .editAreaError {
+    min-height: 1.2rem;
+    margin-top: 0.45rem;
+    color: #b42318;
+    font-size: 0.92rem;
+}
+
+.editArea .editAreaButtonRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.editArea .editAreaBtn {
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.editArea .primaryBtn {
+    background: #0b1f3a;
+    color: white;
+}
+
+.editArea .secondaryBtn {
+    background: #d9e2ef;
+    color: #0b1f3a;
+}
+
+@media (min-width: 900px) {
+    .editArea .editAreaForm {
+        grid-template-columns: 1fr 1fr;
+    }
+}
